@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffc212">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <title>Aimre</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <a href="home.html" style="color: #dcab18;">
+                <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Aimre 
+                    <span class="logo">
+                        <div class="logo-1">
+                            <div class="logo-2" >
+                                <div class="logo-2 logo-3"></div>
+                            </div>
+                        </div>
+                    </span>
+                </h1>
+            </a>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="home.html">
+                        <span><i class="fa-solid fa-house"></i></span>
+                        <span style="font-weight: 550; ">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><i class="fa-solid fa-circle-plus"></i></span>
+                        <span style="font-weight: 550;">Create Group</span>
+                    </a>
+                </li>     
+                <li>
+                    <a href="">
+                        <span><i class="fa-solid fa-people-group"></i></span>
+                        <span style="font-weight: 550;">My Group</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><i class="fa-solid fa-list-check"></i></span>
+                        <span style="font-weight: 550;">My Task</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><i class="fa-solid fa-scroll"></i></span>
+                        <span style="font-weight: 550;">My Journeys</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><i class="fa-solid fa-user-secret"></i></span>
+                        <span style="font-weight: 550;">Profile</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="footbar" style="margin-top: 270px;">
+                <li>
+                    <a href="">
+                        <span><i class="fa-solid fa-gears"></i></span>
+                        <span style="font-weight: 550;">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><i class="fa-solid fa-right-from-bracket"></i></span>
+                        <span style="font-weight: 550;">Log Out</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>
+                <label for="nav-toggle">
+                    <span style="cursor: pointer;"><i class="fa-solid fa-chevron-left"></i></span> 
+                </label>
+                Create Group
+            </h1>
+        </header>
+
+        <main>
+            <div class="form-group">
+                <form action="" method="post">
+                    <div class="form-part">
+                        <label aria-required="true">Group Name</label>
+                        <div class="inp-part">
+                            <input class="form-input" name="Gname" id="Gname" type="text" placeholder="Please Fill Me" style="color: black;" autofocus required>
+                        </div>
+                    </div>
+                    <div class="form-part">
+                        <label>Group Description</label>
+                        <div class="inp-part">
+                            <textarea class="form-input" name="desc" id="desc" rows="4" cols="70" placeholder="Type Something About Your Group" style="color: black;"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-part">
+                        <label aria-required="true">Group Tag</label>
+                        <div class="inp-part">
+                            <input class="form-input" name="Gtag" id="business" value="Business"  type="radio"> <label for="business"  style="color: white;">Business</label><br>
+                            <input class="form-input" name="Gtag" id="nonComm"  value="NonComm"   type="radio"> <label for="nonComm"   style="color: white;">Non Commercial</label><br>
+                            <input class="form-input" name="Gtag" id="personal" value="Personal"  type="radio"> <label for="personal"  style="color: white;">Personal</label><br>
+                            <input class="form-input" name="Gtag" id="ent"      value="Entertain" type="radio"> <label for="ent"       style="color: white;">Entertain</label><br>
+                            <input class="form-input" name="Gtag" id="edu"      value="Education" type="radio"> <label for="edu"       style="color: white;">Education</label><br>
+                        </div>
+                    </div>
+                    <div class="form-part">
+                        <label aria-required="true">Max Member</label>
+                        <div class="inp-part">
+                            <input class="form-input" name="member" id="member" type="number" min="1" placeholder="Max 1000" style="width: 5.5rem;">
+                        </div>
+                    </div>
+                    <div class="form-part">
+                        <input class="btn btn-success" type="submit" value="Submit" id="buttonSubmit">
+                        <input class="btn btn-danger" type="reset" value="Cancel">
+                    </div>
+                </form>
+            </div> 
+
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_4w7rke9s.json" background="#1F222B" speed="1" style="width: 300px; height: 300px; margin-left: 56rem; margin-top: 8rem;" loop autoplay></lottie-player>
+                
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_aqepwxhc.json" background="#1F222B" speed="1" style="width: 300px; height: 300px; margin-left: 23rem; margin-top: -32rem;" loop autoplay></lottie-player>
+        </main>
+    </div>
+</body>
+</html>
+
+    
