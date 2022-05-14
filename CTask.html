@@ -7,16 +7,17 @@
     <meta name="theme-color" content="#ffc212">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     
-    <title>Aimre</title>
+    <title>Create Task</title>
 </head>
 
-<body>
+<body style="overflow-y: scroll;">
     <div class="sidebar">
         <div class="sidebar-logo">
-            <a href="home.html" style="color: #dcab18;">
-                <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Aimre 
+            <a href="home.html" style="color: #dcab18; text-decoration: none;">
+                <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bold;">Aimre 
                     <span class="logo">
                         <div class="logo-1">
                             <div class="logo-2" >
@@ -24,59 +25,59 @@
                             </div>
                         </div>
                     </span>
-                </h1>
+                </h2>
             </a>
         </div>
 
         <div class="sidebar-menu">
             <ul>
                 <li>
-                    <a href="home.html">
+                    <a href="home.html" style="text-decoration: none;">
                         <span><i class="fa-solid fa-house"></i></span>
-                        <span style="font-weight: 550;">Home</span>
+                        <span style="font-weight: 550; ">Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="" style="text-decoration: none;">
                         <span><i class="fa-solid fa-circle-plus"></i></span>
                         <span style="font-weight: 550;">Create Group</span>
                     </a>
                 </li>     
                 <li>
-                    <a href="">
+                    <a href="" style="text-decoration: none;">
                         <span><i class="fa-solid fa-people-group"></i></span>
                         <span style="font-weight: 550;">My Group</span>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="" style="text-decoration: none;">
                         <span><i class="fa-solid fa-list-check"></i></span>
                         <span style="font-weight: 550;">My Task</span>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="" style="text-decoration: none;">
                         <span><i class="fa-solid fa-scroll"></i></span>
                         <span style="font-weight: 550;">My Journeys</span>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="" style="text-decoration: none;">
                         <span><i class="fa-solid fa-user-secret"></i></span>
                         <span style="font-weight: 550;">Profile</span>
                     </a>
                 </li>
             </ul>
 
-            <div class="footbar" style="margin-top: 290px;">
+            <div class="footbar" style="margin-top: 270px;">
                 <li>
-                    <a href="">
+                    <a href="" style="text-decoration: none;">
                         <span><i class="fa-solid fa-gears"></i></span>
                         <span style="font-weight: 550;">Settings</span>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="signIn.html" style="text-decoration: none;">
                         <span><i class="fa-solid fa-right-from-bracket"></i></span>
                         <span style="font-weight: 550;">Log Out</span>
                     </a>
@@ -86,12 +87,60 @@
     </div>
 
     <div class="main-content">
-        <header>
-            <h1>
+        <header style="padding-bottom: 0.4rem; padding-top: 1.38rem;">
+            <h1 style="font-size: 2rem;font-weight: bolder;">
                 <label for="nav-toggle">
                     <span style="cursor: pointer;"><i class="fa-solid fa-chevron-left"></i></span> 
                 </label>
                 Create Task
             </h1>
         </header>
+
+        <main >
+            <div class="form-group" style="margin-top: 0.4rem;">
+                <form action="" method="post">
+                    <div class="form-part">
+                        <label aria-required="true">Task Title</label>
+                        <div class="inp-part">
+                            <input class="form-input" name="Tname" id="Tname" type="text" placeholder="Please Fill This" style="color: black;" autofocus required>
+                        </div>
+                    </div>
+                    <div class="form-part">
+                        <label>Task Description</label>
+                        <div class="inp-part">
+                            <textarea class="form-input" name="Tdesc" id="Tdesc" rows="4" cols="70" placeholder="Type Something About Your Group" style="color: black;"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-part">
+                        <label aria-required="true">Priority Level</label>
+                        <div class="inp-part">
+                            <input class="form-input" name="priorLv" id="xmp"   value="extra"       type="radio"> <label for="xmp"  style="color: white;">Extreme Important [1]</label><br>
+                            <input class="form-input" name="priorLv" id="imp"   value="improtant"   type="radio"> <label for="imp"  style="color: white;">Important [2]</label><br>
+                            <input class="form-input" name="priorLv" id="nml"   value="normal"      type="radio"> <label for="nml"  style="color: white;">Normal [3]</label><br>
+                            <input class="form-input" name="priorLv" id="clm"   value="calm"        type="radio"> <label for="clm"  style="color: white;">Calm [4]</label><br>
+                            <input class="form-input" name="priorLv" id="opt"   value="optional"    type="radio"> <label for="opt"  style="color: white;">Optional [5]</label><br>
+                        </div>
+                    </div>
+                    <div class="form-part">
+                        <label aria-required="true">Member To Assign</label>
+                        <div class="inp-part">
+                            <input class="btn btn-success" type="" value="Add Member +" style="border-style: hidden;">
+                        </div>
+                    </div>
+                    <div class="form-part">
+                        <label width="150">Due Date</label>
+                        <div class="inp-part">
+                            <input class="form-input" name="date" id="date" type="date" style="color: black;" required>
+                        </div>
+                    </div>
+                    <div class="form-part">
+                        <input class="btn btn-success" type="submit" value="Submit" id="buttonSubmit">
+                        <input class="btn btn-danger" type="reset" value="Cancel">
+                    </div>
+                </form>
+            </div> 
+
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_caltkbh1.json" background="transparent" speed="1" style="width: 400px; height: 400px; margin-left: 50rem; margin-top: 7rem;" loop autoplay></lottie-player>
+        </main>
     </div>
