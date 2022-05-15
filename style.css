@@ -335,11 +335,10 @@ td{
     border-radius: 50px;
 }
 
-/*CGroup*/
+/*Create*/
 .form-group{
     margin-left: 7rem;
     margin-top: 3rem;
-    position: fixed;
 }
 
 .form-part{
@@ -357,3 +356,81 @@ td{
     border-width: 2px;
 }
 
+.cmd .cmd-btn{
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 7rem;
+    z-index: 9;
+    border: 0;
+    transition: box-shadow .2s;
+    font-weight: bold;
+}
+
+.cmd .cmd-btn:hover {
+    box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
+/*in group*/
+.t-list{
+    box-sizing: border-box;
+}
+
+.column {
+    margin-top: 4rem;
+    float: left;
+    width: 50%;
+    padding: 15px;
+    height: 60px; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 3px solid #ffc212;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    height: 510px; 
+    border: 3px solid #ffc212;
+}
+
+.column h2{
+    text-align: center;
+    color: #ffc212;
+}
+
+.column2 h2{
+    cursor: pointer;
+    text-align: left;
+    color: #ffc212;
+    margin-bottom: 2rem;
+}
+
+.column2 .journey h2{
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
