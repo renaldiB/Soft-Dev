@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffc212">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <title>Make Journey</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <a href="home.html" style="color: #dcab18; text-decoration: none;">
+                <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bold;">Aimre 
+                    <span class="logo">
+                        <div class="logo-1">
+                            <div class="logo-2" >
+                                <div class="logo-2 logo-3"></div>
+                            </div>
+                        </div>
+                    </span>
+                </h2>
+            </a>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="home.html" style="text-decoration: none;">
+                        <span><i class="fa-solid fa-house"></i></span>
+                        <span style="font-weight: 550; ">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="CGroup.html" style="text-decoration: none;">
+                        <span><i class="fa-solid fa-circle-plus"></i></span>
+                        <span style="font-weight: 550;">Create Group</span>
+                    </a>
+                </li>     
+                <li>
+                    <a href="groupList.html" style="text-decoration: none;">
+                        <span><i class="fa-solid fa-people-group"></i></span>
+                        <span style="font-weight: 550;">My Group</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;">
+                        <span><i class="fa-solid fa-list-check"></i></span>
+                        <span style="font-weight: 550;">My Task</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;">
+                        <span><i class="fa-solid fa-scroll"></i></span>
+                        <span style="font-weight: 550;">My Journeys</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;">
+                        <span><i class="fa-solid fa-user-secret"></i></span>
+                        <span style="font-weight: 550;">Profile</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="footbar" style="margin-top: 270px;">
+                <li>
+                    <a href="" style="text-decoration: none;">
+                        <span><i class="fa-solid fa-gears"></i></span>
+                        <span style="font-weight: 550;">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="signIn.html" style="text-decoration: none;">
+                        <span><i class="fa-solid fa-right-from-bracket"></i></span>
+                        <span style="font-weight: 550;">Log Out</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header style="padding-bottom: 0.4rem; padding-top: 1.38rem;">
+            <h1 style="font-size: 2rem;font-weight: bolder;">
+                <label for="nav-toggle">
+                    <span style="cursor: pointer;"><i class="fa-solid fa-chevron-left"></i></span> 
+                </label>
+                Invite Crew  
+            </h1>
+        </header>
+
+        <main>
+            <div class="form-group" style="margin-top: 7rem; margin-left: 10rem;">
+                <form action="" method="post">
+                    <div class="form-part">
+                        <label aria-required="true">Crew Id</label>
+                        <div class="inp-part">
+                            <input class="form-input" name="Tname" id="Tname" type="text" placeholder="Enter Id..." style="color: black;" autofocus required>
+                        </div>
+                    </div>
+                    <div class="form-part" style="margin-top:3rem;">
+                        <label aria-required="true">Crew Role</label>
+                        <div class="inp-part">
+                            <input class="form-input" name="roles" id="ccl"   value="chief"     type="radio"> <label for="ccl"  style="color: white;">Chief Council</label><br>
+                            <input class="form-input" name="roles" id="cnl"   value="council"   type="radio"> <label for="cnl"  style="color: white;">Council</label><br>
+                            <input class="form-input" name="roles" id="adm"   value="admin"     type="radio"> <label for="adl"  style="color: white;">Admin</label><br>
+                            <input class="form-input" name="roles" id="crm"   value="core"      type="radio"> <label for="crm"  style="color: white;">Core Member</label><br>
+                            <input class="form-input" name="roles" id="mbr"   value="member"    type="radio"> <label for="mbr"  style="color: white;">Member</label><br>
+                        </div>
+                    </div>
+                    <div class="form-part" style="margin-top: 2.5rem;">
+                        <input class="btn btn-success" type="submit" value="Add" id="buttonSubmit" style="margin-right: 2rem;">
+                        <input class="btn btn-danger" type="reset" value="Cancel">
+                    </div>
+                </form>
+            </div>
+
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_8zzltjyc.json" background="transparent" speed="1" style="width: 450px; height: 450px; margin-left: 45rem; margin-top: -26rem;" loop autoplay></lottie-player>
+        </main>
+    </div>
+</body>
+</html>
